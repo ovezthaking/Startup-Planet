@@ -1,0 +1,22 @@
+{
+  "name": "startup_planet",
+  "version": "1.0.0",
+  "description": "a dataset of the world’s most promising startups",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ovezthaking/Startup-Planet.git"
+  },
+  "author": "OveZ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ovezthaking/Startup-Planet/issues"
+  },
+  "homepage": "https://github.com/ovezthaking/Startup-Planet#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
