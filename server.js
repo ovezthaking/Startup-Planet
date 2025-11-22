@@ -45,15 +45,13 @@ app.get('/api/:field/:term', (request, response) => {
   const allowedFields = ['country', 'continent', 'industry']
 
 
-  if(allowedFields.includes(field)){
-    filteredData = filteredData.filter(startup => startup[field].toLowerCase() === term.toLowerCase());
-
-    response.json(filteredData);
-  }
-  else{
+  if(!allowedFields.includes(field)){
     response.status(400).json({message: "Search field not allowed. Please use only 'country', 'continent', 'industry'" });
   }
 
+  filteredData = filteredData.filter(startup => startup[field].toLowerCase() === term.toLowerCase());
+
+  response.json(filteredData);
   
 });
 
