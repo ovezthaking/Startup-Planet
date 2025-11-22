@@ -46,7 +46,7 @@ app.get('/api/:field/:term', (request, response) => {
 
 
   if(!allowedFields.includes(field)){
-    response.status(400).json({message: "Search field not allowed. Please use only 'country', 'continent', 'industry'" });
+    return response.status(400).json({message: "Search field not allowed. Please use only 'country', 'continent', 'industry'" });
   }
 
   filteredData = filteredData.filter(startup => startup[field].toLowerCase() === term.toLowerCase());
