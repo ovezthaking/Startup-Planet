@@ -1,11 +1,6 @@
 import express, { request } from 'express';
 import { startups } from './data/data.js';
 
-const celebrity = {
-  type: "action hero",
-  name: "JSON Statham"
-}
-
 const PORT = 8000;
 
 const app = express();
